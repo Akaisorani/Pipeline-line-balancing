@@ -1,0 +1,26 @@
+{
+    "name":"cloth1",
+    "components":[
+        {
+            "id":1,
+            "name":"口袋",
+            "groups":[
+                {
+                    "id":1,
+                    "name":"1",
+                    "jobs":[
+                        {
+                            "id":1,
+                            "name":"侧袋上袋布",
+                            "count":1,
+                            "std_time":14.4,
+                            "need_machine":"平车",
+                            "need_skill":"简单平车"
+                        }
+                    ]        
+                }
+            ]
+    
+        }
+    ]
+}
