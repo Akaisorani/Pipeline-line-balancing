@@ -3,6 +3,7 @@
 /watch_json*
 temp*
 data/
+past_result/
 myconfig.py
 
 # Byte-compiled / optimized / DLL files
