@@ -34,9 +34,11 @@ class MILP_solver_pulp(object):
 
         
         # begin solve
-        # solver=getSolver('PULP_CBC_CMD', timeLimit=1000, gapRel=0.05)
-        # self.model.solve(solver)
-        self.model.solve()
+        # solver=getSolver('PULP_CBC_CMD', timeLimit=1000, gapRel=0.05)     # pulp solver
+        # solver=getSolver('CPLEX_CMD', timeLimit=1000, gapRel=0.05)
+        solver=getSolver('GUROBI_CMD', timeLimit=1000, gapRel=0.05)
+        self.model.solve(solver)
+        # self.model.solve()
 
         print("求解状态:", LpStatus[self.model.status])
         # var_val_index={}
