@@ -32,7 +32,6 @@ class MILP_solver_pulp(object):
             self.model += lpSum([x * c for x, c in zip(vars_all, line) if c!=0])==b_val[0], "等式约束"+str(t_id)
             t_id+=1
 
-        
         # begin solve
         # solver=getSolver('PULP_CBC_CMD', timeLimit=1000, gapRel=0.05)     # pulp solver
         # solver=getSolver('CPLEX_CMD', timeLimit=1000, gapRel=0.05)

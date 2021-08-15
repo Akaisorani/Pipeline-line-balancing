@@ -293,23 +293,23 @@ class Line_balancing(object):
                 json.dump(self.variable_tuples, fp)
 
             # save A, b, Aeq, Beq to csv
-            with open(self.cfg.ILP_contraints_path+"/"+"A.csv" ,'w')as f:
+            with open(self.cfg.ILP_contraints_path+"/"+"A.csv" ,'w', newline='')as f:
                 f_csv = csv.writer(f)
                 f_csv.writerows(A)
             
-            with open(self.cfg.ILP_contraints_path+"/"+"b.csv" ,'w')as f:
+            with open(self.cfg.ILP_contraints_path+"/"+"b.csv" ,'w',newline='')as f:
                 f_csv = csv.writer(f)
                 f_csv.writerows(b)
 
-            with open(self.cfg.ILP_contraints_path+"/"+"Aeq.csv" ,'w')as f:
+            with open(self.cfg.ILP_contraints_path+"/"+"Aeq.csv" ,'w',newline='')as f:
                 f_csv = csv.writer(f)
                 f_csv.writerows(Aeq)
 
-            with open(self.cfg.ILP_contraints_path+"/"+"beq.csv" ,'w')as f:
+            with open(self.cfg.ILP_contraints_path+"/"+"beq.csv" ,'w',newline='')as f:
                 f_csv = csv.writer(f)
                 f_csv.writerows(beq)
         
-            with open(self.cfg.ILP_contraints_path+"/"+"f.csv" ,'w')as f:
+            with open(self.cfg.ILP_contraints_path+"/"+"f.csv" ,'w',newline='')as f:
                 f_csv = csv.writer(f)
                 f_csv.writerows([f_line])
 
