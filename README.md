@@ -8,7 +8,7 @@
 2. 根据技能熟练度和工序表建模预平衡问题
 3. 使用混合01整数规划求解
 
-![workflow](https://z3.ax1x.com/2021/08/17/fhNrnA.png)
+<img src="https://z3.ax1x.com/2021/08/17/fhNrnA.png" width="70%">
 
 ## 整数规划
 ### 约束
@@ -22,5 +22,5 @@
 ### 方程
 其中变量![formula](https://render.githubusercontent.com/render/math?math=x_{klr})表示第k个员工是否分配到序号区间[l, r]的工序，m为员工数量，n为工序数量，![formula](https://render.githubusercontent.com/render/math?math=t_{k})表示第k个员工的工序总工时，![formula](https://render.githubusercontent.com/render/math?math=g_{ki})为根据工序表和员工能力表计算出的第k个员工做第i个工序的工时，![formula](https://render.githubusercontent.com/render/math?math=\overline{t})表示员工平均工时。总优化目标为最小化平均工时和工时平均差的加权平均指标。
 
-![formula](https://z3.ax1x.com/2021/08/17/fhwdUI.png)
+<img src="https://z3.ax1x.com/2021/08/17/fhwdUI.png" width="50%">
 
